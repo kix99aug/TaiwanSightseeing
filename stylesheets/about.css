@@ -186,6 +186,7 @@ article div.container {
     width: 70%;
     padding: 20px;
     margin: 20px 0;
+    border-radius:20px;
     background: rgba(255, 255, 255, 0.75);
 }
 
@@ -194,6 +195,7 @@ article div.container div.img,article div.container div.img img {
     display:block;
     border-radius: 100%;
     margin: auto;
+    border-radius:50%;
 }
 
 article div.container div.profile {
@@ -209,4 +211,21 @@ article div.container div.profile {
         width: 10vh;
         height: 10vh;
     }
+}
+.container{
+    animation-name:slowout;
+    animation-duration:2s;
+}
+@keyframes slowout{
+    from{
+        margin-top:100%;
+    }
+    to{
+        margin-top: 20px;
+    }
+}
+.img img{
+    width: 70%;
+    height: auto;
+    object-fit: cover;
 }
