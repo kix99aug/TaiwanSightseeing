@@ -186,3 +186,30 @@ function show_kaohsiung_city() {
     var path = document.querySelector('#city_txt')
     path.innerText = '高雄市'
 }
+
+var path_18 = document.querySelector('#kinmen_country')
+path_18.addEventListener('mouseover', show_kinmen_country)
+
+function show_kinmen_country() {
+    console.log('有選到歐!')
+    var path = document.querySelector('#city_txt')
+    path.innerText = '金門縣'
+}
+
+var path_19 = document.querySelector('#lienchiang_country')
+path_19.addEventListener('mouseover', show_lienchiang_country)
+
+function show_lienchiang_country() {
+    console.log('有選到歐!')
+    var path = document.querySelector('#city_txt')
+    path.innerText = '連江縣'
+}
+
+var path_20 = document.querySelector('#penghu_country')
+path_20.addEventListener('mouseover', show_penghu_country)
+
+function show_penghu_country() {
+    console.log('有選到歐!')
+    var path = document.querySelector('#city_txt')
+    path.innerText = '澎湖縣'
+}

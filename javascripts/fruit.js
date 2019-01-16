@@ -1,6 +1,6 @@
 var article = document.querySelector('article')
 
-db.ref('/fruit/').on('value',ss=>{
+db.ref('/fruit/').once('value',ss=>{
   var data = ss.val()
   article.innerHTML = ''
   for (let i in data) {

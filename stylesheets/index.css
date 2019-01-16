@@ -46,6 +46,7 @@ body {
     padding: 0 1em;
     margin-left:auto;
     margin-right:auto;
+    z-index: 800000000;
     background: rgba(255, 255, 255, 0.3);
 }
 
@@ -128,6 +129,12 @@ nav a, #menu a {
     color:black;
     text-decoration: none;
 }
+
+nav a:hover{
+    transform: scaleX(1.1);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
 nav img {
     display:none;
 }
@@ -163,14 +170,15 @@ svg#taiwan {
 
 svg path {
     stroke: rgb(0, 0, 0);
-    fill: green;
+    fill: rgba(0,255,0,0.5);
     transition: 0.4s;
     cursor: pointer;
 }
 
 svg path:hover {
-    fill: #DAA520;
-    transform: translate(-5px, -5px);
+    fill: rgba(255,255,255,0.5);
+    border: 5px solid black;
+    transform: translate(-1px, -1px);
 }
 
 svg path:hover ::after {

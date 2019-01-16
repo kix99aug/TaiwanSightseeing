@@ -173,6 +173,7 @@ svg path:hover ::after {
 article {
     display: flex;
     padding-top:10vh;
+    height: 80vh;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
@@ -202,8 +203,7 @@ article div.card {
     padding:20px;
     border-radius: 10px;
     margin: 20px;
-    animation-name: slowout;
-    animation-duration: 3s; 
+    animation: slowout ease-out 1.5s;
     background-color: rgba(255, 255, 255, 0.75);
 }
 
