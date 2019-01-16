@@ -68,21 +68,6 @@ body {
     margin: 10px;
 }
 
-@media (max-width:800px) {
-    .modal img {
-        margin: 0;
-        float: none;
-        width: 100%;
-    }
-
-    .article {
-        flex-wrap: wrap;
-    }
-
-    nav a {
-        display: none;
-    }
-}
 
 nav {
     display: flex;
@@ -202,6 +187,13 @@ article div.container div.profile {
     flex: 2;
 }
 
+
+.img img{
+    object-fit: cover;
+    width: 15vw;
+    height:15vw ;
+}
+
 @media (max-width:800px) {
     nav a {
         display: none;
@@ -210,6 +202,22 @@ article div.container div.profile {
         display: block;
         width: 10vh;
         height: 10vh;
+    }
+}
+@media (max-width:800px) {
+    .img img{
+        object-fit: cover;
+        width: 70vw;
+        height:70vw ;
+    }
+    .article {
+        flex-wrap: wrap;
+    }
+    .article .container{
+        flex-flow: column wrap;
+    }
+    nav a {
+        display: none;
     }
 }
 .container{
@@ -223,9 +231,4 @@ article div.container div.profile {
     to{
         margin-top: 20px;
     }
-}
-.img img{
-    width: 70%;
-    height: auto;
-    object-fit: cover;
 }
